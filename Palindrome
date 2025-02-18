@@ -1,0 +1,15 @@
+/* 
+checks a string or a word if, is it Palindrome or not.
+palindrome, a word which is same after doing a reverse.
+POP = POP is Palindrome
+Apple = elppA // is not Palindrome
+*/
+
+
+function isPalindrome(str){
+ const Cleaned = str.replace(/[^a-zA-Z0-9]/g).toLowerCase();
+ const reverseString = Cleaned.split('').reverse().join('');
+ return Cleaned === reverseString
+}
+
+console.log(isPalindrome('Hello World!'));
