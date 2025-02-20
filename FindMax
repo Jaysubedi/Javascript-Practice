@@ -1,0 +1,11 @@
+//To find the largest number.
+
+function findMax(n){
+ let numb = n[0];
+ for (i=0; i<n.length; i++){
+  if (n[i]> numb){
+   numb = n[i]
+  }
+return numb}
+
+console.log(findMax([1,2,3,4,54,3,6,7,98,6,6,7,8,9543,45,6,7]))
